@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Sorting System</title>
+</head>
+<body>
+    <h1>Gift Sorting System</h1>
+    <form id="packageForm">
+        <label for="sender">Sender Name:</label>
+        <input type="text" id="sender" required><br>
+
+        <label for="recipient">Recipient Name:</label>
+        <input type="text" id="recipient" required><br>
+
+        <label for="packageId">Package ID:</label>
+        <input type="text" id="packageId" required><br>
+
+        <label for="address">Delivery Address:</label>
+        <input type="text" id="address" required><br>
+
+        <label for="weight">Weight (kg):</label>
+        <input type="number" id="weight" step="0.01" required><br>
+
+        <button type="submit">Add Package</button>
+    </form>
+    <h2>Packages</h2>
+    <div id="packageList"></div>
+
+    <script src="manager.js"></script>
+</body>
+</html>
